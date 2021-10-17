@@ -41,7 +41,7 @@ class ArticleAdmin(admin.ModelAdmin):
     }),
     ((u'Додатково'), {
     'classes': ('grp-collapse grp-closed',),
-    'fields': ('slug',),
+    'fields': ('slug', raw_id_fields),
     }),
     )
     def delete_file(self, pk, request):
